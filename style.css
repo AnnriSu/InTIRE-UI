@@ -183,3 +183,151 @@ body {
     font-size: 14px;
     opacity: 0.9;
 }
+
+body {
+    margin: 0;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: system-ui;
+}
+
+.phone-container {
+    width: 360px;
+    height: 700px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.logo {
+    width: 170px;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui;
+}
+
+.splash-screen {
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    text-align: center;
+}
+
+.logo {
+    width: 220px;
+    margin-top: 120px;
+    max-width: 80%;
+}
+
+.welcome-card {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #f3b453;
+    padding: 35px 25px 45px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.welcome-card h2 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.welcome-card p {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.signin-btn {
+    width: 100%;
+    padding: 14px;
+    background: #1f1f1f;
+    color: white;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    background: #ffffff;
+    color: #333;
+    border-radius: 30px;
+}
+
+body {
+    background: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.phone {
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card {
+    background: #f2b556;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 40px;
+    max-width: 500px;
+}
+
+.card h4 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background: #1f1b1c;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar i {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.navbar .active {
+    background: #f2b556;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
