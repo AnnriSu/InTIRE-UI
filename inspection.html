@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>InTIRE</title>
+    <link href="assests/style.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="inspection-header d-flex align-items-center justify-content-start">
+        <a href="homepage.html" class="btn btn-link p-0 me-2" aria-label="Back to Home">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" stroke="#fff" stroke-width="2"
+                class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 1-.5.5H3.707l4.147 4.146a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708.708L3.707 7.5H14.5A.5.5 0 0 1 15 8z"
+                    stroke="#fff" stroke-width="2" />
+            </svg>
+        </a>
+
+        <div class="flex-grow-1 d-flex justify-content-center">
+            <h3 class="text-center my-1">INSPECTION</h3>
+        </div>
+
+
+    </div>
+
+    <!-- camera -->
+    <div class="camera-container d-flex justify-content-center align-items-center">
+        <div class="inspection-container"
+            style="aspect-ratio: 1 / 1; width: 400px; max-width: 100vw; display: flex; justify-content: center; align-items: center;">
+            <video id="cameraStream" autoplay playsinline
+                style="display:none; width:100%; height:100%; object-fit:cover; position:relative; "></video>
+            <script>
+                window.addEventListener('DOMContentLoaded', async function () {
+                    const video = document.getElementById('cameraStream');
+                    try {
+                        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                        video.srcObject = stream;
+                        video.style.display = 'block';
+                    } catch (err) {
+                        alert('Unable to access camera: ' + err.message);
+                    }
+                });
+            </script>
+        </div>
+    </div>
+
+    <div class="inspection-container">
+        
+        <p class="text-center mt-3">put text here</p>
+
+    </div>
+
+
+
+    <!-- BOTTOM NAV -->
+    <div class="bottom-nav">
+
+        <a href="homepage.html">
+            <i class="bi bi-house nav-icon active"></i>
+        </a>
+
+        <a href="profile.html">
+            <i class="bi bi-person nav-icon"></i>
+        </a>
+
+        <a href="settings.html">
+            <i class="bi bi-gear nav-icon"></i>
+        </a>
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

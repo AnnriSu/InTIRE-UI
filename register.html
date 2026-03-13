@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>InTIRE</title>
+    <link href="assests/style.css" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body style="background: #FEBD59;">
+
+    <div class="register-container">
+        <div class="back-btn mt-3" <button type="button" class="btn btn-link" onclick="window.history.back()"
+            aria-label="Go back">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" stroke="currentColor"
+                stroke-width="2" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 1-.5.5H3.707l4.147 4.146a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708.708L3.707 7.5H14.5A.5.5 0 0 1 15 8z"
+                    stroke="currentColor" stroke-width="2" />
+            </svg>
+            </button>
+        </div>
+        
+    
+        <div class="mt-4">
+            <h1>Register</h1>
+            <h6 class="mt-2">
+                Create an account to start fast and accurate tire defect inspection.</h6> <br>
+        </div>
+    
+    </div>
+
+    <div class="register-footer">
+
+        <div class=" rounded-4 py-2 pb-5 ">
+            <div>
+                <label class="form-label">
+                    Email Address <span class="text-danger">*</span>
+                </label>
+                <input type="email" class="form-control mb-3" placeholder="example@email.com">
+
+                <label class="form-label">
+                    Confirm Email Address <span class="text-danger">*</span>
+                </label>
+                <input type="email" class="form-control mb-3" placeholder="example@email.com">
+
+                <label class="form-label">
+                    Password <span class="text-danger">*</span>
+                </label>
+                <input type="password" class="form-control mb-1" placeholder="Use 8-15 characters with symbols">
+            </div>
+        </div>
+
+
+        <div>
+            <div class="text-center">
+                <br>
+                <small class="form-text text-muted">
+                    Already have an account? <a href="signIn.html" style="color:#FEBD59;">Sign In</a>
+                </small>
+                <button type="button" class="register-btn" onclick="window.location.href='homepage.html'">Register</button>
+            </div>
+        </div>
+
+        <script>
+            window.addEventListener('DOMContentLoaded', function () {
+                document.querySelector('.register-footer').classList.add('slide-in');
+            });
+        </script>
+
+    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
