@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    background: #ffffff;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+/* Center the content */
+.app-wrapper {
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Logo */
+.logo-img {
+    width: 160px;
+    margin-bottom: 60px;
+}
+
+/* Button container */
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px;
+    /* small side spacing */
+}
+
+/* Start button */
+.start-btn {
+    background: #FEBD59;
+    border: none;
+    padding: 14px;
+    border-radius: 25px;
+    font-weight: 600;
+    color: 1E1E1E;
+    width: 100%;
+}
+
+.dark-btn {
+    background: #222831;
+    color: white;
+    padding: 14px;
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    background: #1E1E1E;
+}
+
+/* Icons */
+.nav-icon {
+    font-size: 22px;
+    color: white;
+}
+
+/* Active icon */
+.nav-icon.active {
+    color: #FEBD59;
+}
+
+/* Wrapper for settings */
+.app-wrapper.settings {
+    text-align: left;
+    padding: 20px;
+    max-width: 100%;
+}
+
+/* Individual setting item */
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.setting-item:last-child {
+    border-bottom: none;
+}
+
+.setting-label {
+    font-size: 16px;
+}
+
+/* Toggle switch */
+.toggle-switch {
+    width: 40px;
+    height: 20px;
+    background: #ccc;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.toggle-switch::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    top: 1px;
+    left: 1px;
+    transition: left 0.3s;
+}
+
+.toggle-switch.active {
+    background: #FEBD59;
+}
+
+.toggle-switch.active::after {
+    left: 21px;
+}
+
+/* Right-side buttons */
+.button-right {
+    padding: 5px 12px;
+    border: none;
+    background: #1E1E1E;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Settings Title */
+.settings-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 40px 0 30px 0;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Setting card */
+.setting-card {
+    background: #1E1E1E;
+    color: white;
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.setting-card:hover {
+    background: #3b3b3b;
+}
+
+/* Left section */
+.setting-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+}
+
+/* Icons */
+.setting-left i {
+    font-size: 18px;
+    color: #FEBD59;
+}
+
+/* Right text */
+.setting-right {
+    font-size: 14px;
+    opacity: 0.9;
+}
