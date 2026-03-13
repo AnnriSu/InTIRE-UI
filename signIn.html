@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>InTIRE | Sign In </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    .container-fluid {
+        background-color: #FEBD59;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <nav>
+            <a href="register.html">
+                <img src="images/back.png" alt="Back" class="m-3" style="height: 30px">
+            </a>
+        </nav>
+
+        <div class="row">
+            <div class="col fw-bold text-dark mt-4 text-center" style="font-size: 2.5rem">
+                Sign In
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                Sign in to your account and start a fast and accurate tire defect inspection.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card rounded-4 w-50 outline-0 mx-auto my-2">
+                    <div class="card-body mt-3">
+                        <label class="form-label my-2">
+                            Email Address <span class="text-danger">*</span>
+                        </label>
+                        <input type="email" class="form-control mb-3" placeholder="example@email.com">
+
+                        <label class="form-label my-2">
+                            Password <span class="text-danger">*</span>
+                        </label>
+                        <input type="password" class="form-control mb-3" placeholder="Use 8-15 characters with symbols">
+
+                        <div class="text-end">
+                            <small class="form-text text-muted">
+                                <a href="passwordReset.html" class="text-muted">Forgot Password?</a></small>
+                        </div>
+
+                        <div class="btn d-flex justify-content-center mt-4">
+                            <button class="btn btn-dark w-50 mt-2">Sign In</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
